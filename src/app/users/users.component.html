@@ -1,0 +1,17 @@
+<button (click)="updateAge()"> Update age </button>
+
+<section>
+    <div *ngFor="let user of users()">
+    <p> {{user.name}} </p>
+    </div>
+</section>
+<section>
+    @for (user of users(); track user.id) {
+        <ul>
+            <li>{{user.name}} - {{user.username}} {{user.email}}</li>
+        </ul>
+    }
+</section>
+
+
+
